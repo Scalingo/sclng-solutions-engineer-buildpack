@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# This script always return a success for this buildpack. When this buildpack
+# is used, we always want to install libvips. It should be used as part of the
+# multi-buildpack
+# (https://doc.scalingo.com/platform/deployment/buildpacks/multi).
+#
+
+BUILD_DIR=${1:-}
+
+echo "libvips"
+exit 0
